@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шаблоны n8n — автоматизация рабочих процессов</title>
+  <meta name="description" content="Готовые шаблоны для n8n: рассылки в Telegram, парсинг, интеграции с CRM и Google Sheets, обработка заявок. Установка за минуты.">
+  <meta name="keywords" content="n8n шаблоны, автоматизация n8n, workflow n8n, Telegram рассылка, парсинг, интеграции">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Шаблоны n8n — автоматизация рабочих процессов">
+  <meta property="og:description" content="Готовые шаблоны для n8n. Telegram, Google Sheets, CRM, парсинг, уведомления.">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:image" content="" id="og-image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Шаблоны n8n">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="cart-tab-wrap" id="cartWrap">
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <button type="button" class="cart-tab-btn" id="cartBtn" aria-label="Корзина">
+      <span class="cart-tab-icon"></span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <div class="cart-panel">
+      <div class="cart-panel-header">
+        <h2 class="cart-panel-title">Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-panel-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/xbdalgye" method="POST">
+          <input type="hidden" name="_subject" value="Заказ шаблонов n8n">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="text" name="contact" placeholder="Телефон, Telegram или почта" required autocomplete="tel">
+          <textarea name="comment" placeholder="Комментарий" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">n8n Templates</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Каталог</a>
+        <a href="about.html" class="nav-link">О проекте</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Шаблоны n8n для любой автоматизации</h1>
+          <p class="hero-utp">Готовые воркфлоу: рассылки в Telegram, парсинг, CRM, Google Sheets, уведомления. Импорт за минуту — настраиваете под себя.</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary btn-hero">Смотреть каталог</a>
+            <a href="#consult" class="btn btn-hero-outline">Написать нам</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="images/hero.jpg" alt="n8n автоматизация" class="hero-image" id="heroImage" width="480" height="480">
+          <div class="hero-image-placeholder" id="heroPlaceholder" aria-hidden="true">
+            <span class="hero-placeholder-text">n8n</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="catalog-layout">
+          <div class="catalog-main">
+            <h2 class="section-title" id="catalog-heading">Каталог шаблонов</h2>
+            <p class="catalog-seo-text">Шаблоны n8n для автоматизации: Telegram, Google Sheets, парсинг, CRM, уведомления, формы, соцсети. Выберите категорию или смотрите все.</p>
+            <div class="catalog-grid" id="catalogGrid"></div>
+            <noscript>
+              <ul class="catalog-noscript" aria-label="Список шаблонов">
+                <li>Рассылка в Telegram</li>
+                <li>Парсинг в Google Sheets</li>
+                <li>Обработка заявок с формы</li>
+                <li>Синхронизация CRM и почты</li>
+                <li>Дашборд уведомлений</li>
+                <li>Парсер сайтов в Notion</li>
+                <li>Интеграция Telegram + Email</li>
+                <li>Бэкап в облако по расписанию</li>
+                <li>Обработка лидов из рекламы</li>
+                <li>Мониторинг сайтов и алерты</li>
+                <li>Автопостинг в соцсети</li>
+                <li>Универсальный вебхук-маршрутизатор</li>
+              </ul>
+            </noscript>
+          </div>
+          <aside class="catalog-sidebar" aria-label="Фильтры каталога">
+            <div class="filter-block filter-price">
+              <h3 class="filter-block-title">Цена, ₽</h3>
+              <div class="filter-price-inputs">
+                <label class="filter-price-label">
+                  <span class="filter-price-text">от</span>
+                  <input type="number" id="priceMin" class="filter-price-input" min="0" max="100000" step="100" placeholder="790">
+                </label>
+                <label class="filter-price-label">
+                  <span class="filter-price-text">до</span>
+                  <input type="number" id="priceMax" class="filter-price-input" min="0" max="100000" step="100" placeholder="1990">
+                </label>
+              </div>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-block-title">Категория</h3>
+              <div class="filters">
+                <button type="button" class="filter-btn active" data-category="all">Все</button>
+                <button type="button" class="filter-btn" data-category="telegram">Telegram</button>
+                <button type="button" class="filter-btn" data-category="sheets">Google Sheets</button>
+                <button type="button" class="filter-btn" data-category="forms">Формы</button>
+                <button type="button" class="filter-btn" data-category="crm">CRM</button>
+                <button type="button" class="filter-btn" data-category="notifications">Уведомления</button>
+                <button type="button" class="filter-btn" data-category="parsing">Парсинг</button>
+                <button type="button" class="filter-btn" data-category="automation">Автоматизация</button>
+                <button type="button" class="filter-btn" data-category="social">Соцсети</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" aria-labelledby="reviews-heading">
+      <div class="reviews-inner">
+        <div class="reviews-header">
+          <h2 class="section-title" id="reviews-heading">Отзывы</h2>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="consult-section" id="consult">
+      <div class="container">
+        <h2 class="section-title">Есть вопросы?</h2>
+        <p class="consult-text">Напишите — подберём шаблон или поможем с настройкой</p>
+        <form class="consult-form" id="consultForm" action="https://formspree.io/f/xjgekyrn" method="POST">
+          <input type="hidden" name="_subject" value="Запрос с сайта n8n Templates">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="text" name="contact" placeholder="Телефон, Telegram или почта" required autocomplete="tel">
+          <textarea name="message" placeholder="Ваш вопрос" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© n8n Templates</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal-overlay" id="productModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+  <script>
+    (function () {
+      var heroImage = document.getElementById('heroImage');
+      var heroPlaceholder = document.getElementById('heroPlaceholder');
+      if (heroImage && heroPlaceholder) {
+        var heroWrap = heroImage.closest('.hero-image-wrap');
+        heroImage.onload = function () { heroWrap.classList.add('has-hero-image'); };
+        heroImage.onerror = function () { heroImage.style.display = 'none'; };
+        if (heroImage.complete && heroImage.naturalWidth > 0) heroWrap.classList.add('has-hero-image');
+      }
+    })();
+  </script>
+</body>
+</html>

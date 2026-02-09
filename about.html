@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — n8n Templates</title>
+  <meta name="description" content="О проекте готовых шаблонов для n8n: автоматизация, интеграции, поддержка.">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:title" content="О проекте — n8n Templates">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="legal-page">
+  <div class="cart-tab-wrap" id="cartWrap">
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <button type="button" class="cart-tab-btn" id="cartBtn" aria-label="Корзина">
+      <span class="cart-tab-icon"></span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <div class="cart-panel">
+      <div class="cart-panel-header">
+        <h2 class="cart-panel-title">Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-panel-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/YOUR_N8N_ORDER_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="Заказ шаблонов n8n">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="text" name="contact" placeholder="Телефон, Telegram или почта" required autocomplete="tel">
+          <textarea name="comment" placeholder="Комментарий" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">n8n Templates</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Каталог</a>
+        <a href="about.html" class="nav-link active">О проекте</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main-page legal-main">
+    <div class="legal-page-bg" aria-hidden="true">
+      <span class="legal-orb legal-orb-1"></span>
+      <span class="legal-orb legal-orb-2"></span>
+      <span class="legal-orb legal-orb-3"></span>
+      <span class="legal-orb legal-orb-4"></span>
+      <span class="legal-orb legal-orb-5"></span>
+      <div class="legal-grid"></div>
+    </div>
+    <section class="page-hero legal-hero">
+      <div class="container">
+        <h1 class="page-title legal-title">О проекте</h1>
+        <p class="legal-hero-sub">Готовые шаблоны для n8n и поддержка</p>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container narrow legal-card">
+        <p class="about-lead">
+          Мы делаем готовые шаблоны для n8n — чтобы вы могли запустить автоматизацию за минуты, а не днями. Все воркфлоу проверены, документированы и подходят под типичные задачи: рассылки, парсинг, интеграции с CRM и таблицами.
+        </p>
+        <div class="about-blocks">
+          <div class="about-block">
+            <h2>Готовые решения</h2>
+            <p>Каждый шаблон — это полноценный workflow с настройками под ваши ключи и данные. Импортируете в n8n, подставляете свои значения — и запускаете. Не нужно собирать ноды с нуля.</p>
+          </div>
+          <div class="about-block">
+            <h2>Поддержка и обновления</h2>
+            <p>После покупки вы получаете доступ к инструкции и при необходимости — к консультации по настройке. Шаблоны обновляются под новые версии n8n и изменения API сервисов.</p>
+          </div>
+          <div class="about-block">
+            <h2>Для кого</h2>
+            <p>Для маркетологов, малого бизнеса, разработчиков и всех, кто уже использует n8n или только хочет попробовать автоматизацию без глубокого погружения в низкоуровневую настройку.</p>
+          </div>
+        </div>
+        <p class="about-cta">
+          Остались вопросы? <a href="contacts.html">Напишите нам</a> — подберём шаблон или поможем с настройкой.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© n8n Templates</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+</body>
+</html>
